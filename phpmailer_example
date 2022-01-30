@@ -21,8 +21,7 @@ class sendEmail {
                
         $mail->isHTML(true);  // Set email format to HTML
 
-        $bodyContent = "Estimado(a):<br><bold> ".$nombre."</bold><br> Le informamos que su comprobante electrónico ha sido emitido exitosamente y se encuentra adjunto al presente correo.";
-
+        $bodyContent = "Estimado(a):<br><bold> ".$nombre."</bold><br> Le informamos que su comprobante electrónico ha sido emitido exitosamente y se encuentra adjunto al presente email.";
 
         $mail->Subject = $tipo.' Factura electrónica';
         $mail->Body = $bodyContent;
